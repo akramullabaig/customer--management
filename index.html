@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Management </title>
+    <script type="module" src="main.js"></script>
+     <link rel="stylesheet" href="customer.css">
+
+
+</head>
+<body>
+   
+        <div id="titlemod">
+                <legend style="text-align: center ">Customer Management System</legend>
+                </div>
+    <div id="formmod">
+    <form>
+        
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" minlength="3" maxlength="20" placeholder="First Name" required/><br>
+                <p id="firstName_errors" ></p>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" minlength="1"  maxlength="=20" placeholder="Last Name"/><br>
+                <p id="lastName_errors" ></p>
+            </div> 
+            <div>
+                <label for="tele" >Contact No.:</label>
+                <input type="number" id="tel" name="tel" minlength="10" maxlength="10" placeholder="mobile no" required/><br>           
+                <p id="tel_errors" ></p>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>            
+                <input type="email" id="email" name="email" maxlength="50" placeholder="email address" required><br>
+                <p id="email_errors" ></p>
+            </div>
+
+            <input type="submit" value="ADD" />
+        
+    </form>
+</div>
+
+      <div id="customers" class="tablepad">
+            <table id="custTable" border="1">
+    <tr>
+         <th>
+             id
+         </th>
+
+         <th>
+              firstName
+          </th>
+          <th>
+              lastName
+          </th>
+          <th>
+            email
+          </th>
+          <th>
+              mobile
+          </th>
+          <th>
+              action
+          </th>
+      </tr>
+
+
+    
+    </table>
+</div>
+</body>
+</html>
